@@ -1,0 +1,10 @@
+### General Project temp file ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+/out/
+
+### IDEA config temp file ###
+.idea
+*.iml
+
