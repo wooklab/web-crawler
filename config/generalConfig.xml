@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generalConfigurations>
+    <!-- log4j2 configuration file path (필수) -->
+    <logbackPath>
+        /Users/wookmac/workspace/personalProject/JavaProject/Crawler/config/logback.xml
+    </logbackPath>
+    <!-- target Portal Site Config file path (필수) -->
+    <crawlConfigPath>
+        /Users/wookmac/workspace/personalProject/JavaProject/Crawler/config/crawlConfig/naverBlogConfig.xml
+    </crawlConfigPath>
+
+    <!-- Export Settings -->
+    <export>
+        <!-- 파일을 저장할 경로 (필수) -->
+        <path>/Users/wookmac/workspace/personalProject/JavaProject/Crawler/result</path>
+        <!-- 파일명 (선택, Default: 검색어) -->
+        <fileName></fileName>
+        <!-- 파일 명 뒤에 붙을 이름 (선택, Default: 아무것도 붙지 않음) -->
+        <fileNameSuffix>_Crawled</fileNameSuffix>
+        <!-- 파일 확장자 (필수) -->
+        <fileNameExtension>tsv</fileNameExtension>
+        <!-- 파일 인코딩 (필수) -->
+        <fileEncoding>UTF-8</fileEncoding>
+    </export>
+
+    <!-- Search Keyword, search possible multiple keywords.
+     - The separate is Comma(,)
+    -->
+    <searchKeywords>위메프</searchKeywords>
+    <!-- MAX Crawling Documents Count
+     - 최대 수집 문서수(네이버 블로그에서 블로그를 비공개 또는 폐쇄할 경우 검색에 노출이 되면 모자랄 수 있음)
+    -->
+    <maxCrawlingDocumentsCount>1</maxCrawlingDocumentsCount>
+</generalConfigurations>
